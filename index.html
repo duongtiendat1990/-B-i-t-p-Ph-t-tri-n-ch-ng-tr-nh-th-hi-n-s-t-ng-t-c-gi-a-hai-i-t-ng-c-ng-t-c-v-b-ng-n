@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lamp's Switch</title>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>Lamp's Switch</legend>
+        <table>
+            <tr>
+                <td><h1>Lamp's Status: </h1></td>
+                <td><h1 id="lampStatus"></h1></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="connectButton" onclick="SwitchButton.connectToLamp();connectButton.innerHTML=SwitchButton.connectionToLamp">Connect</button></td>
+                <td><button type="button" id="power" onclick="SwitchButton.power();lampStatus.innerHTML = Lamp.status;this.innerHTML = SwitchButton.status">Turn On</button></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
